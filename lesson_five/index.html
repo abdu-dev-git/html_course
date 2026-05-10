@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Attributes</title>
+    <style>
+        .list2 {
+            color: red;
+        }
+
+        #sjsdhf {
+            color: green;
+        }
+
+        .huyy {
+            color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    HTML attribute 
+        - is a thing that gives extra behavior for the element
+        - syntax
+            <elem attribute_name="value" attribute_name="value">content</elem>
+        - There are two types of attributes
+            - global attribute
+            - element specific attributes
+    -->
+    <h1>HTML Attributes</h1>
+    <ol type="A" start="4">
+      <li>Lorem, ipsum.</li>
+      <li>Consectetur, magnam!</li>
+      <li>Earum, porro.</li>
+    </ol>
+    <!-- 
+        1. element specific
+            - attributes that belongs to specific element
+            - eg.
+                href -> a
+                type -> ol
+        2. global attributes
+            - attributes that are avilable for any element
+            - eg. 
+                1. id => specify a single element
+                    - we can write any name in that id
+                2. class => specify elements with the same property
+                    - we can give multiple classes for single element
+                    - to give multiple classes, separate each class name with space
+                3. style => used to give style for that element
+
+                4. title => used to show text when the element is hovered
+    -->
+    <ul>
+        <li class="list2 huyy" id="sjsdhf">Lorem, ipsum.</li>
+        <li class="list2 huyy">Delectus, alias!</li>
+        <li style="color: black;" class="list2">Voluptatum, .</li>
+        <li title="this is list item" class="list2">Voluptas, facere!</li>
+    </ul>
+  </body>
+</html>

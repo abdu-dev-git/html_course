@@ -3,100 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tables</title>
-    <style>
-      table,
-      tr,
-      td,
-      th {
-        border: 1px solid;
-        border-collapse: collapse;
-      }
-    </style>
+    <title>Form In Html</title>
   </head>
   <body>
-    <h1>Html Tables</h1>
     <!-- 
-     table tag => used to create tabeles in html
-     tr tag (table row) => useed to create row in  html table
-     td tag (table data ) => to insert single cell inside a row
-     th tag (table head) => to reprecent heading cells
+        Form => used to collect user input
+        form tag
     -->
+    <form action="" method="get">
+      <!-- used to wrapp input elements -->
+      <!-- 
+        basic structure of inpu element
+            - input tag - void tag
+            type attribute => used to decide type of input
+            name => used to handle that input
+       -->
+      <input name="first_name" type="text" />
+      <br /><br />
+      <!-- types of inputs 
+        1. text type
+        2. password
+        3. email
 
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Mark</th>
-      </tr>
-      <tr>
-        <td>Abdu</td>
-        <td>21</td>
-        <td>100</td>
-      </tr>
-      <tr>
-        <td>Hayat</td>
-        <td>67</td>
-        <td>34</td>
-      </tr>
-      <tr>
-        <td colspan="2">Total</td>
-        <td>56</td>
-      </tr>
-      <tr>
-        <td rowspan="3">Tolosa</td>
-        <td>Abebe</td>
-        <td>Kebede</td>
-      </tr>
-      <tr>
-        <td>Gebeyew</td>
-        <td>Beso</td>
-      </tr>
-      <tr>
-        <td>huuu</td>
-        <td>haaa</td>
-      </tr>
-    </table>
-    <hr />
-    <table>
-      <thead>
-        <tr>
-          <th>Product</th>
-          <th>Price</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Banana</td>
-          <td>80</td>
-          <td>Everywhere</td>
-        </tr>
-        <tr>
-          <td>Orange</td>
-          <td>80</td>
-          <td>Everywhere</td>
-        </tr>
-        <tr>
-          <td rowspan="3">Phone</td>
-          <td>7000</td>
-          <td>Ethio</td>
-        </tr>
-        <tr>
-          <td>6000</td>
-          <td>England</td>
-        </tr>
-        <tr>
-          <td>70000</td>
-          <td>China</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="2">Total</td>
-          <td>80000</td>
-        </tr>
-      </tfoot>
-    </table>
+        4. file 
+      -->
+      <input type="text" value="Abdu"/>
+      <br /><br />
+      <input type="password" name="" required id="" />
+      <br /><br />
+      <input type="email" placeholder="your_email@mail.com" name="" id="" />
+      <br /><br />
+      <input type="file" name="" id="" />
+      <br /><br />
+      <input type="color" name="" id="" />
+      <br /><br />
+      <input type="date" name="" id="" />
+
+      <br /><br /><br />
+      <input type="checkbox" name="choice" id="" />Banana
+      <br />
+      <input type="checkbox" name="choice" id="" />
+      Cat
+      <br /><br />
+      <input type="radio" name="gender" id="" />Male
+      <br />
+      <input type="radio" name="gender" id="" />Female <br /><br /><br />
+      <input type="number" name="" id="" />
+      <br /><br />
+      <input type="range" name="" id="" />
+
+      <br />
+      <textarea name="" id="" placeholder="sdjkdks"></textarea>
+      <br><br>
+      <button type="submit" >Submit</button>
+      <button type="reset">Reset</button>
+    </form>
   </body>
 </html>
